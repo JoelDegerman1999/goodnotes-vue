@@ -1,20 +1,19 @@
 <template>
   <section>
-    <Header/>
     <Main/>
   </section>
 </template>
 
 <script>
-import Header from './Header'
-import Main from './Main'
+// import Header from './Header'
+import Main from './components/Main'
 // import Footer from './Footer'
 
 export default {
   components: {
-    Header: Header,
+    // Header: Header,
     Main: Main,
-    // Footer: Footer
+   // Footer: Footer
   }
 }
 </script>
@@ -29,6 +28,16 @@ export default {
   }
 
   body {
-    padding: 0 1rem;
+    background-color: #fefefe;
+    padding: 1rem 1rem 0;
+    height: 100vh;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
   }
 </style>
